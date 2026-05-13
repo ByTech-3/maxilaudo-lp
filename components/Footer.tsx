@@ -59,7 +59,7 @@ export function Footer() {
             </div>
             <div className="text-[13.5px] leading-[1.6] text-[#9bafe6]">
               <strong className="text-white font-semibold block mb-0.5 text-[13px] tracking-[0.06em] uppercase">Portão</strong>
-              R. Dr. João Tobias Pinto Rebelo, 207<br />Curitiba, PR
+              R. Dr. João Tobias Pinto Rebelo, 3589<br />Curitiba, PR
             </div>
           </div>
         </div>
