@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(Remove-Item *)"
+      "Bash(Remove-Item *)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Bytech3\\\\projetos-lp\\\\maxilaudo\\\\maxilaudo-lp\" -Recurse -Directory | Select-Object -First 50 | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Bytech3\\\\projetos-lp\\\\maxilaudo\\\\maxilaudo-lp\" -Recurse -File | Where-Object { $_.Extension -in @\\('.tsx', '.ts', '.jsx', '.js', '.json', '.html'\\) } | Select-Object -ExpandProperty FullName | Sort-Object)"
     ]
   }
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${barlow.variable} ${poppins.variable}`}>
       <body>
+        <Script src="/tracking.js" strategy="afterInteractive" />
         <Header />
         <main className="pt-[68px]">{children}</main>
         <Footer />
