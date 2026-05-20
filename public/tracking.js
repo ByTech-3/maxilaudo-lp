@@ -86,6 +86,23 @@
 
     console.log("[ml-tracking] Enviando payload →", payload);
 
+    // Push para GTM dataLayer
+    try {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: isWpp ? "whatsapp_click" : "phone_click",
+        click_url: href,
+        page_url: window.location.href,
+        utm_source: stored.utm_source || "",
+        utm_medium: stored.utm_medium || "",
+        utm_campaign: stored.utm_campaign || "",
+        utm_content: stored.utm_content || "",
+        utm_term: stored.utm_term || "",
+        utm_id: stored.utm_id || "",
+        gclid: stored.gclid || "",
+      });
+    } catch(e) {}
+
     var done = false;
     var timer = setTimeout(function () {
       if (!done) {
