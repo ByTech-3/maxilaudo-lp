@@ -17,7 +17,7 @@ export function Footer() {
               style={{ mixBlendMode: "screen" }}
             />
             <p className="text-[13.5px] leading-[1.55] text-[#9bafe6] max-w-[280px]">
-              Perícias e vistorias veiculares em Curitiba. Credenciada DETRAN-PR para Remarcação de Chassi. Mais de 60.000 laudos emitidos.
+              Perícias e vistorias veiculares em Curitiba. Credenciada DETRAN-PR para Remarcação de Chassi e Motor. Mais de 60.000 laudos emitidos.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-3 items-start justify-between text-[12.5px] text-[#7a8cbf] sm:flex-row sm:items-center">
           <div>© 2025 Maxilaudo Perícias e Vistorias Veiculares. Todos os direitos reservados.</div>
-          <div>CNPJ XX.XXX.XXX/0001-XX · Credenciada DETRAN-PR para Remarcação de Chassi</div>
+          <div>CNPJ 20.250.264.0001/00 · Credenciada DETRAN-PR para Remarcação de Chassi</div>
         </div>
       </div>
     </footer>
