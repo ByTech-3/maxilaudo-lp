@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Antes de fechar negócio, descubra a verdade sobre o veículo. Laudo cautelar, laudo técnico, remarcação de chassi e histórico veicular. Credenciada DETRAN-PR.",
 };
 
-const WPP_GERAL = `https://wa.me/5541997426286?text=${encodeURIComponent("Olá! Quero falar com um especialista da Maxilaudo.")}`;
+const WPP_GERAL = `https://wa.me/554191446917?text=${encodeURIComponent("Olá! Quero falar com um especialista da Maxilaudo.")}`;
 
 const StarIcon = () => (
   <svg viewBox="0 0 24 24" className="w-[18px] h-[18px] text-[#fbbf24] fill-current">
@@ -307,7 +307,7 @@ export default function HomePage() {
         title="Não arrisque seu dinheiro."
         sub="Agende agora sua perícia — atendemos em Curitiba via WhatsApp ou telefone."
         wppHref={WPP_GERAL}
-        wppLabel="WhatsApp: (41) 99742-6286"
+        wppLabel="WhatsApp: (41) 9144-6917"
       />
     </>
   );

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Consulte o histórico documental do veículo antes de comprar. Leilão, sinistro, roubo, gravame, restrições e débitos. Resposta em até 15 minutos pelo WhatsApp.",
 };
 
-const WPP = "https://wa.me/5541997426286";
+const WPP = "https://wa.me/554191446917";
 
 export default function HistoricoVeicularPage() {
   return (

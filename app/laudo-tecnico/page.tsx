@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Laudo técnico para disputas judiciais, vícios redibitórios, defeitos ocultos e conflitos com concessionária. Perito vai até o veículo. Atendemos em Curitiba.",
 };
 
-const WPP = `https://wa.me/5541997426286?text=${encodeURIComponent("Quero descrever meu caso para um laudo técnico.")}`;
+const WPP = `https://wa.me/554191446917?text=${encodeURIComponent("Quero descrever meu caso para um laudo técnico.")}`;
 
 const CheckIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px] flex-shrink-0 mt-0.5">

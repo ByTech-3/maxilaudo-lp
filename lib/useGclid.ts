@@ -20,7 +20,7 @@ export function useGclid() {
 }
 
 export function buildWppUrl(msg: string, gclid: string | null) {
-  const base = "https://wa.me/5541997426286";
+  const base = "https://wa.me/554191446917";
   const text = gclid ? `${msg} [gclid:${gclid}]` : msg;
   return `${base}?text=${encodeURIComponent(text)}`;
 }

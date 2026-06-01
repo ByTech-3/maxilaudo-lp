@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Perícia completa antes de comprar. Análise estrutural, pintura, identificação, histórico e entrega do laudo em até 1h30. Atendemos em Curitiba e região.",
 };
 
-const WPP = `https://wa.me/5541997426286?text=${encodeURIComponent("Quero agendar o MAXILAUDO.")}`;
+const WPP = `https://wa.me/554191446917?text=${encodeURIComponent("Quero agendar o MAXILAUDO.")}`;
 
 export default function MaxilaudoPage() {
   return (
@@ -257,7 +257,7 @@ export default function MaxilaudoPage() {
         title="Agende o MAXILAUDO antes de fechar o negócio."
         sub="Dois minutos no WhatsApp economizam dezenas de milhares de reais no carro errado. Fale com um perito agora — atendemos em toda Curitiba e região metropolitana."
         wppHref={WPP}
-        wppLabel="WhatsApp: (41) 99742-6286"
+        wppLabel="WhatsApp: (41) 9144-6917"
       />
     </>
   );

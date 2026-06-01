@@ -39,7 +39,7 @@ export function Footer() {
             <h5 className="font-heading font-bold text-white text-[18px] uppercase tracking-[0.1em] mb-[18px]">
               Contato
             </h5>
-            <a href="https://wa.me/5541997426286" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">WhatsApp (41) 99742-6286</a>
+            <a href="https://wa.me/554191446917" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">WhatsApp (41) 9144-6917</a>
             <a href="tel:+554130239104" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">Fixo (41) 3023-9104</a>
             <a href="mailto:contato@maxilaudo.com.br" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">contato@maxilaudo.com.br</a>
             <div className="mt-3.5 text-[13.5px] leading-[1.6] text-[#9bafe6]">

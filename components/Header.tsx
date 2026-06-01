@@ -83,11 +83,11 @@ export function Header() {
 
         <div className="flex gap-2.5 items-center pr-8">
           <a
-            href="https://wa.me/5541997426286"
+            href="https://wa.me/554191446917"
             className="inline-flex items-center gap-2 bg-verde-wpp text-white font-bold text-sm px-[22px] py-3 rounded-full no-underline border-none cursor-pointer transition-all duration-200 whitespace-nowrap shadow-[0_4px_16px_rgba(37,211,102,0.4)] hover:bg-verde-wpp-hover hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(37,211,102,0.5)]"
           >
             <WppIcon />
-            <span className="hidden sm:inline">(41) 99742-6286</span>
+            <span className="hidden sm:inline">(41) 9144-6917</span>
           </a>
 
           <button

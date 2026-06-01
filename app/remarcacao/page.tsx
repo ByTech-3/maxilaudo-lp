@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Chassi ilegível ou motor sem numeração? A Maxilaudo é credenciada pelo DETRAN-PR para Remarcação dentro da lei. Acompanhamento do início ao fim.",
 };
 
-const WPP = "https://wa.me/5541997426286";
+const WPP = "https://wa.me/554191446917";
 
 export default function RemarcacaoPage() {
   return (
