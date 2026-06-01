@@ -6,6 +6,44 @@
   // Charset sem I, O, 0, 1 para evitar confusão visual
   var CHARSET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 
+  // ─── Mapeamento: texto original da URL → mensagem personalizada ───────────
+  var MESSAGE_MAP = {
+    "Olá! Quero falar com um especialista da Maxilaudo.":
+      "Olá! Vim pelo site e gostaria de falar com um especialista da Maxilaudo.",
+    "Quero agendar o MAXILAUDO.":
+      "Olá! Quero agendar o MAXILAUDO — Laudo Cautelar. Podem me passar prazo e valor?",
+    "Quero descrever meu caso para um laudo técnico.":
+      "Olá! Tenho um problema com meu veículo e preciso de um Laudo Técnico. Posso descrever meu caso?",
+    "Quero regularizar meu veículo — Remarcação":
+      "Olá! Preciso regularizar meu veículo pela Remarcação de Chassi credenciada pelo DETRAN-PR. Como funciona?",
+    "Quero saber o que preciso para remarcar":
+      "Olá! Quero saber o que preciso para fazer a Remarcação de Chassi. Podem me orientar?",
+    "Quero regularizar meu veículo com a Remarcação":
+      "Olá! Preciso regularizar meu veículo pela Remarcação de Chassi credenciada pelo DETRAN-PR. Como funciona?",
+    "Quero consultar o histórico de um veículo":
+      "Olá! Quero consultar o Histórico Veicular de um veículo. Qual a placa preciso informar?",
+    "Quero o combo Histórico + MAXILAUDO":
+      "Olá! Tenho interesse no combo Histórico Veicular + MAXILAUDO Cautelar. Como funciona?",
+    "Quero consultar o histórico":
+      "Olá! Quero consultar o Histórico Veicular de um veículo. Qual a placa preciso informar.",
+  };
+
+  // ─── Resolve a mensagem personalizada pelo texto original ─────────────────
+  function resolveMessage(rawText) {
+    // 1. Match exato
+    if (MESSAGE_MAP[rawText]) return MESSAGE_MAP[rawText];
+    // 2. rawText começa com a chave (texto da URL pode ser truncado)
+    for (var key in MESSAGE_MAP) {
+      if (rawText.indexOf(key) === 0) return MESSAGE_MAP[key];
+    }
+    // 3. Chave começa com rawText (chave pode ter sufixo extra)
+    for (var key2 in MESSAGE_MAP) {
+      if (key2.indexOf(rawText) === 0) return MESSAGE_MAP[key2];
+    }
+    // 4. Fallback: texto original
+    return rawText;
+  }
+
   // ─── Gera ou recupera o session_id de 4 caracteres ───────────────────────
   function generateSessionId() {
     try {
@@ -26,12 +64,15 @@
     }
   }
 
-  // ─── Adiciona [SESSION_ID] ao parâmetro text da URL do wa.me ─────────────
+  // ─── Monta URL do WhatsApp com session_id no início e mensagem personalizada
   function buildWhatsAppUrl(href, sessionId) {
     try {
       var parsed = new URL(href);
-      var existingText = parsed.searchParams.get("text") || "";
-      parsed.searchParams.set("text", existingText + " [" + sessionId + "]");
+      // searchParams.get() já faz decode automaticamente
+      var rawText = parsed.searchParams.get("text") || "";
+      var message = resolveMessage(rawText);
+      // Session_id no início: "[CODE] mensagem personalizada"
+      parsed.searchParams.set("text", "[" + sessionId + "] " + message);
       return parsed.toString();
     } catch (e) {
       var sep = href.indexOf("?") === -1 ? "?" : "&";
