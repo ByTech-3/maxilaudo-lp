@@ -1,6 +1,6 @@
 (function () {
   var STORAGE_KEY = "ml_tracking";
-  var WEBHOOK_URL = "https://bytech3.app.n8n.cloud/webhook/maxi-gclid";
+  var WEBHOOK_URL = "https://n8n.maxilaudo.com/webhook/maxi-gclid";
   var TIMEOUT_MS = 2000;
 
   // Charset sem I, O, 0, 1 para evitar confusão visual
