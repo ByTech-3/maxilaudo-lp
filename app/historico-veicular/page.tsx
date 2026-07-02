@@ -5,9 +5,9 @@ import { CtaFinal } from "@/components/CtaFinal";
 import { RevealSection } from "@/components/RevealSection";
 
 export const metadata: Metadata = {
-  title: "Histórico Veicular | Maxilaudo Perícias",
+  title: "Histórico Veicular em Curitiba | Maxilaudo Perícias",
   description:
-    "Consulte o histórico documental do veículo antes de comprar. Leilão, sinistro, roubo, gravame, restrições e débitos. Resposta em até 15 minutos pelo WhatsApp.",
+    "Pesquisa completa: leilão, sinistro, roubo, gravame, débitos e restrições. Resposta em até 15 min pelo WhatsApp. Proteja sua compra em Curitiba.",
 };
 
 const WPP = "https://wa.me/554191446917";

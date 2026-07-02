@@ -4,9 +4,9 @@ import { CtaFinal } from "@/components/CtaFinal";
 import { RevealSection } from "@/components/RevealSection";
 
 export const metadata: Metadata = {
-  title: "Remarcação de Chassi e Motor | Maxilaudo · Credenciada DETRAN-PR",
+  title: "Remarcação de Chassi em Curitiba | Maxilaudo DETRAN-PR",
   description:
-    "Chassi ilegível ou motor sem numeração? A Maxilaudo é credenciada pelo DETRAN-PR para Remarcação dentro da lei. Acompanhamento do início ao fim.",
+    "Credenciada DETRAN-PR para remarcação de chassi e motor. Regularize chassi ilegível ou motor trocado e libere seu veículo para transferência. Agende já.",
 };
 
 const WPP = "https://wa.me/554191446917";

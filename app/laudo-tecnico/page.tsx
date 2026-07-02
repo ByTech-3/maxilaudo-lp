@@ -5,9 +5,9 @@ import { CtaFinal } from "@/components/CtaFinal";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Laudo Técnico Veicular | Maxilaudo Perícias",
+  title: "Laudo Técnico Veicular Curitiba | Maxilaudo Perícias",
   description:
-    "Laudo técnico para disputas judiciais, vícios redibitórios, defeitos ocultos e conflitos com concessionária. Perito vai até o veículo. Atendemos em Curitiba.",
+    "Defeito oculto, vício redibitório ou conflito com concessionária? Perito vai ao veículo em Curitiba. Laudo com valor de prova para processo judicial.",
 };
 
 const WPP = `https://wa.me/554191446917?text=${encodeURIComponent("Quero descrever meu caso para um laudo técnico.")}`;

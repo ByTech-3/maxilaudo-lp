@@ -5,9 +5,9 @@ import { CtaFinal } from "@/components/CtaFinal";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "MAXILAUDO — Laudo Cautelar | Maxilaudo Perícias",
+  title: "Laudo Cautelar em Curitiba | Maxilaudo Perícias Veiculares",
   description:
-    "Perícia completa antes de comprar. Análise estrutural, pintura, identificação, histórico e entrega do laudo em até 1h30. Atendemos em Curitiba e região.",
+    "Perícia veicular completa antes de comprar: estrutura, pintura, chassi e histórico. Laudo em até 1h30. Credenciada DETRAN-PR. Agende pelo WhatsApp.",
 };
 
 const WPP = `https://wa.me/554191446917?text=${encodeURIComponent("Quero agendar o MAXILAUDO.")}`;
