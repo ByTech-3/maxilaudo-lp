@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const WPP = `https://wa.me/554191446917?text=${encodeURIComponent("Quero agendar o MAXILAUDO.")}`;
 
-export default function MaxilaudoPage() {
+export default function LaudoCautelarPage() {
   return (
     <>
       {/* HERO */}

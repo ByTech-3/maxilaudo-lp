@@ -343,7 +343,7 @@ export default function HistoricoVeicularPage() {
                     <span className="font-[Barlow_Condensed,sans-serif] font-black text-[22px] text-cinza-texto">decisão final de compra</span>
                   </div>
                   <Link
-                    href="/maxilaudo"
+                    href="/laudo-cautelar"
                     className="inline-flex items-center gap-2 bg-vermelho text-white px-[26px] py-4 rounded-[10px] font-semibold text-[15px] no-underline transition-all hover:bg-vermelho-hover hover:-translate-y-0.5"
                     style={{ boxShadow: "0 8px 22px rgba(250,12,19,0.35)" }}
                   >
@@ -398,7 +398,7 @@ export default function HistoricoVeicularPage() {
                     Quero o combo no WhatsApp →
                   </a>
                   <Link
-                    href="/maxilaudo"
+                    href="/laudo-cautelar"
                     className="inline-flex items-center gap-2.5 bg-transparent text-white border border-[rgba(255,255,255,0.4)] px-[26px] py-4 rounded-[10px] font-semibold text-[15px] no-underline transition-all hover:bg-[rgba(255,255,255,0.08)]"
                   >
                     Conhecer o MAXILAUDO

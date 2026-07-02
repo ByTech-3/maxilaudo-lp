@@ -9,7 +9,7 @@ import { useSmartHeader } from "@/lib/useSmartHeader";
 
 const navLinks = [
   { href: "/", label: "Início" },
-  { href: "/maxilaudo", label: "MAXILAUDO" },
+  { href: "/laudo-cautelar", label: "MAXILAUDO" },
   { href: "/laudo-tecnico", label: "Laudo Técnico" },
   { href: "/remarcacao", label: "Remarcação" },
   { href: "/historico-veicular", label: "Histórico Veicular" },

@@ -149,7 +149,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {([
-              { tag: "★ Produto Principal", title: "MAXILAUDO — Laudo Cautelar", desc: "Perícia completa antes de comprar. O produto que protege seu investimento — análise estrutural, identificação do veículo, funilaria/pintura e documental.", href: "/maxilaudo" },
+              { tag: "★ Produto Principal", title: "MAXILAUDO — Laudo Cautelar", desc: "Perícia completa antes de comprar. O produto que protege seu investimento — análise estrutural, identificação do veículo, funilaria/pintura e documental.", href: "/laudo-cautelar" },
               { tag: "Pós-compra", title: "Laudo Técnico", desc: "Para disputas judiciais, defeitos ocultos, vícios redibitórios e problemas pós-compra. Documento técnico com valor de prova.", href: "/laudo-tecnico" },
               { tag: "Credenciada DETRAN-PR", title: "Remarcação de Chassi e Motor", desc: "Empresa credenciada pelo DETRAN-PR para realizar este procedimento. Regularize seu veículo com a documentação correta exigida em lei.", href: "/remarcacao" },
               { tag: "15 min", title: "Histórico Veicular", desc: "Consulta rápida do passado do veículo antes de qualquer negócio — leilão, furto, sinistro, gravame, débitos e proprietários.", href: "/historico-veicular" },
