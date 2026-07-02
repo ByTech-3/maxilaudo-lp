@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { WppIcon } from "@/components/WppIcon";
 import { RevealSection } from "@/components/RevealSection";
 import { CtaFinal } from "@/components/CtaFinal";
@@ -12,9 +13,30 @@ export const metadata: Metadata = {
 
 const WPP = `https://wa.me/554191446917?text=${encodeURIComponent("Quero agendar o MAXILAUDO.")}`;
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Laudo Cautelar Veicular",
+  alternateName: "MAXILAUDO",
+  description:
+    "Perícia veicular completa antes da compra: análise estrutural, pintura, identificação de chassi e motor, histórico documental. Laudo entregue em até 1h30.",
+  url: "https://www.maxilaudo.com/laudo-cautelar",
+  provider: {
+    "@type": "AutoRepair",
+    "@id": "https://www.maxilaudo.com/#business",
+    name: "Maxilaudo Perícias e Vistorias",
+  },
+  areaServed: { "@type": "City", name: "Curitiba" },
+  serviceType: "Laudo Cautelar",
+};
+
 export default function LaudoCautelarPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {/* HERO */}
       <section className="relative bg-azul-escuro text-white overflow-hidden" style={{ padding: "96px 0 110px" }}>
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)", backgroundSize: "48px 48px", maskImage: "radial-gradient(ellipse at 70% 50%,#000 0%,transparent 75%)", WebkitMaskImage: "radial-gradient(ellipse at 70% 50%,#000 0%,transparent 75%)" }} />
@@ -249,6 +271,22 @@ export default function LaudoCautelarPage() {
               </RevealSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* SERVIÇOS RELACIONADOS */}
+      <section className="bg-white py-[72px] border-t border-[#e3e8f3]">
+        <div className="max-w-[1280px] mx-auto px-6">
+          <RevealSection>
+            <h2 className="h-font text-[clamp(24px,3vw,34px)] text-cinza-texto mb-4">Serviços relacionados</h2>
+            <p className="text-cinza-claro text-[15px] mb-6 max-w-[600px]">
+              Antes de agendar o MAXILAUDO, considere também{" "}
+              <Link href="/historico-veicular" className="text-azul font-semibold underline underline-offset-2 hover:text-vermelho transition-colors">
+                consultar o histórico veicular completo do carro
+              </Link>{" "}
+              — em 15 minutos você filtra os veículos com sinistro grave, leilão ou restrição antes mesmo de agendar a vistoria presencial.
+            </p>
+          </RevealSection>
         </div>
       </section>
 

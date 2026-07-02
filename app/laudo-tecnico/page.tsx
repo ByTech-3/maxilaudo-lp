@@ -12,6 +12,22 @@ export const metadata: Metadata = {
 
 const WPP = `https://wa.me/554191446917?text=${encodeURIComponent("Quero descrever meu caso para um laudo técnico.")}`;
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Laudo Técnico Veicular",
+  description:
+    "Laudo técnico para disputas judiciais, vícios redibitórios, defeitos ocultos e conflitos com concessionária. Perito vai ao veículo com valor de prova.",
+  url: "https://www.maxilaudo.com/laudo-tecnico",
+  provider: {
+    "@type": "AutoRepair",
+    "@id": "https://www.maxilaudo.com/#business",
+    name: "Maxilaudo Perícias e Vistorias",
+  },
+  areaServed: { "@type": "City", name: "Curitiba" },
+  serviceType: "Laudo Técnico",
+};
+
 const CheckIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-[18px] h-[18px] flex-shrink-0 mt-0.5">
     <polyline points="20 6 9 17 4 12" />
@@ -21,6 +37,10 @@ const CheckIcon = () => (
 export default function LaudoTecnicoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {/* HERO */}
       <section className="relative bg-azul-escuro text-white overflow-hidden" style={{ padding: "96px 0 110px" }}>
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)", backgroundSize: "48px 48px", maskImage: "radial-gradient(ellipse at 70% 50%,#000 0%,transparent 75%)", WebkitMaskImage: "radial-gradient(ellipse at 70% 50%,#000 0%,transparent 75%)" }} />

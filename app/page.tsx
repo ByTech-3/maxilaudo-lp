@@ -11,6 +11,51 @@ export const metadata: Metadata = {
     "Antes de fechar negócio, descubra a verdade sobre o veículo. Laudo cautelar, laudo técnico, remarcação de chassi e histórico veicular. Credenciada DETRAN-PR.",
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "@id": "https://www.maxilaudo.com/#business",
+  name: "Maxilaudo Perícias e Vistorias",
+  url: "https://www.maxilaudo.com",
+  telephone: "+554191446917",
+  email: "contato@maxilaudo.com.br",
+  image: "https://www.maxilaudo.com/assets/maxilaudo-logo.png",
+  description:
+    "Perícias e vistorias veiculares em Curitiba. Laudo cautelar, laudo técnico, remarcação de chassi e histórico veicular. Credenciada DETRAN-PR.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "R. Via Veneto, 1440",
+    addressLocality: "Curitiba",
+    addressRegion: "PR",
+    postalCode: "82310-010",
+    addressCountry: "BR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -25.3842,
+    longitude: -49.3342,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  ],
+  priceRange: "$$",
+  areaServed: {
+    "@type": "City",
+    name: "Curitiba",
+  },
+};
+
 const WPP_GERAL = `https://wa.me/554191446917?text=${encodeURIComponent("Olá! Quero falar com um especialista da Maxilaudo.")}`;
 
 const StarIcon = () => (
@@ -22,6 +67,10 @@ const StarIcon = () => (
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       {/* HERO */}
       <section
         className="relative bg-azul-escuro text-white overflow-hidden"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CtaFinal } from "@/components/CtaFinal";
 import { RevealSection } from "@/components/RevealSection";
@@ -11,9 +12,29 @@ export const metadata: Metadata = {
 
 const WPP = "https://wa.me/554191446917";
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Remarcação de Chassi e Motor",
+  description:
+    "Empresa credenciada DETRAN-PR para remarcação de chassi e motor. Regularize chassi ilegível, motor trocado ou pós-acidente com procedimento oficial.",
+  url: "https://www.maxilaudo.com/remarcacao",
+  provider: {
+    "@type": "AutoRepair",
+    "@id": "https://www.maxilaudo.com/#business",
+    name: "Maxilaudo Perícias e Vistorias",
+  },
+  areaServed: { "@type": "City", name: "Curitiba" },
+  serviceType: "Remarcação de Chassi",
+};
+
 export default function RemarcacaoPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {/* HERO */}
       <section
         className="relative text-white overflow-hidden"
@@ -438,6 +459,22 @@ export default function RemarcacaoPage() {
               </article>
             </RevealSection>
           </div>
+        </div>
+      </section>
+
+      {/* SERVIÇOS RELACIONADOS */}
+      <section className="bg-white py-[72px] border-t border-[#e3e8f3]">
+        <div className="max-w-[1280px] mx-auto px-6">
+          <RevealSection>
+            <h2 className="h-font text-[clamp(24px,3vw,34px)] text-cinza-texto mb-4">Serviços relacionados</h2>
+            <p className="text-cinza-claro text-[15px] mb-6 max-w-[620px]">
+              Em alguns casos, a remarcação é consequência de uma disputa judicial ou de um defeito identificado em perícia anterior. Se for esse o seu caso,{" "}
+              <Link href="/laudo-tecnico" className="text-azul font-semibold underline underline-offset-2 hover:text-vermelho transition-colors">
+                o laudo técnico veicular
+              </Link>{" "}
+              pode ser o documento que embasa a regularização — especialmente em processos de sinistro, adulteração ou reparo mal-feito em que a numeração foi comprometida.
+            </p>
+          </RevealSection>
         </div>
       </section>
 
