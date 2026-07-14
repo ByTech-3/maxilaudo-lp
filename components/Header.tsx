@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/laudo-tecnico", label: "Laudo Técnico" },
   { href: "/remarcacao", label: "Remarcação" },
   { href: "/historico-veicular", label: "Histórico Veicular" },
+  { href: "/lojistas", label: "Lojistas" },
   { href: "/sobre", label: "Sobre" },
 ];
 

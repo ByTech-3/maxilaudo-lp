@@ -32,6 +32,7 @@ export function Footer() {
             <Link href="/laudo-tecnico" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">Laudo Técnico</Link>
             <Link href="/remarcacao" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">Remarcação</Link>
             <Link href="/historico-veicular" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">Histórico Veicular</Link>
+            <Link href="/lojistas" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">Parceria para Lojistas</Link>
             <Link href="/sobre" className="block text-[#9bafe6] no-underline text-sm py-1.5 hover:text-white transition-colors">Sobre a Maxilaudo</Link>
           </div>
 
