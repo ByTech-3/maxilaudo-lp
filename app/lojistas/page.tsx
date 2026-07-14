@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Seja parceiro Maxilaudo: laudo cautelar completo para lojistas de Curitiba com volume mensal, preço fechado e deslocamento incluso. Proteja seu estoque e venda com mais confiança. +30 lojas parceiras.",
 };
 
-const WPP = "https://wa.me/5541997426286?text=Olá!+Sou+lojista+e+quero+conhecer+a+parceria+da+Maxilaudo.";
+const WPP = "https://wa.me/554191446917?text=Olá!+Sou+lojista+e+quero+conhecer+a+parceria+da+Maxilaudo.";
 
 const serviceSchema = {
   "@context": "https://schema.org",

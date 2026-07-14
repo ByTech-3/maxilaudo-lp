@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const WPP_PARTICULAR = `https://wa.me/554191446917?text=${encodeURIComponent(
   "Olá! Vim pelo site e quero saber mais sobre a Maxilaudo."
 )}`;
-const WPP_PARCEIRO = `https://wa.me/5541997426286?text=${encodeURIComponent(
+const WPP_PARCEIRO = `https://wa.me/554191446917?text=${encodeURIComponent(
   "Olá! Sou parceiro/lojista e quero falar com a Maxilaudo."
 )}`;
 
@@ -546,7 +546,7 @@ export default function SobrePage() {
               className="inline-flex items-center gap-2.5 bg-transparent text-white border border-[rgba(255,255,255,0.6)] px-[26px] py-4 rounded-[10px] font-semibold text-[15px] no-underline transition-all hover:bg-white hover:text-vermelho hover:-translate-y-0.5"
             >
               <WppIcon />
-              Atendimento a parceiros: (41) 99742-6286
+              Atendimento a parceiros: (41) 9144-6917
             </a>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center text-[14.5px] text-[rgba(255,255,255,0.85)]">
