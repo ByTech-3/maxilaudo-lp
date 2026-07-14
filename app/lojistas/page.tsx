@@ -123,12 +123,6 @@ const inclusos = [
   "Laudo em PDF com fotos e assinatura",
 ];
 
-const passos = [
-  { num: "01", title: "Solicite pelo WhatsApp", desc: "Peça os laudos ao longo do mês, quando precisar. A equipe agenda e executa." },
-  { num: "02", title: "Fechamento no dia 1º", desc: "Todas as solicitações do mês consolidadas em um só lugar." },
-  { num: "03", title: "Pagamento até o dia 5", desc: "Simples, previsível, sem cobrança avulsa a cada laudo." },
-];
-
 const planos = [
   {
     nome: "Giro Leve",
@@ -299,38 +293,8 @@ export default function LojistasPage() {
         </div>
       </section>
 
-      {/* 5. COMO FUNCIONA A PARCERIA */}
-      <section className="bg-azul-claro py-[88px]" id="como-funciona">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <RevealSection className="flex flex-col items-start mb-12 max-w-[720px]">
-            <h2 className="h-font text-[clamp(28px,3.8vw,44px)] text-cinza-texto mb-3.5 text-balance">
-              Uma parceria feita para a rotina de quem vende carro
-            </h2>
-          </RevealSection>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 mb-8">
-            {passos.map((p) => (
-              <RevealSection
-                key={p.num}
-                className="group bg-white border-[1.5px] border-[#e3e8f3] rounded-[14px] p-7 pt-8 relative flex flex-col gap-3 transition-all duration-200 hover:-translate-y-1 hover:border-azul hover:shadow-[0_18px_40px_rgba(10,43,143,0.08)]"
-              >
-                <div className="absolute -top-3 left-[22px] bg-azul text-white font-heading font-extrabold text-[13px] px-2.5 py-0.5 rounded-full tracking-[0.1em]">
-                  {p.num}
-                </div>
-                <h3 className="font-heading font-bold text-[20px] leading-[1.15] text-cinza-texto mt-1">{p.title}</h3>
-                <p className="text-cinza-claro text-[14px] leading-[1.55]">{p.desc}</p>
-              </RevealSection>
-            ))}
-          </div>
-
-          <RevealSection className="bg-azul text-white rounded-[14px] px-7 py-5 text-center font-heading font-bold text-[16.5px] leading-[1.4]">
-            Modelo de fechamento mensal — sem multa, sem fidelidade forçada, sem burocracia.
-          </RevealSection>
-        </div>
-      </section>
-
       {/* 6. MODALIDADES DE PARCERIA */}
-      <section className="bg-white py-[88px]">
+      <section className="bg-white py-[88px]" id="como-funciona">
         <div className="max-w-[1280px] mx-auto px-6">
           <RevealSection className="flex flex-col items-start mb-3 max-w-[720px]">
             <h2 className="h-font text-[clamp(28px,3.8vw,44px)] text-cinza-texto mb-3.5 text-balance">
