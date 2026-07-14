@@ -294,7 +294,7 @@ export default function LojistasPage() {
       </section>
 
       {/* 6. MODALIDADES DE PARCERIA */}
-      <section className="bg-white py-[88px]" id="como-funciona">
+      <section className="bg-azul-claro py-[88px]" id="como-funciona">
         <div className="max-w-[1280px] mx-auto px-6">
           <RevealSection className="flex flex-col items-start mb-3 max-w-[720px]">
             <h2 className="h-font text-[clamp(28px,3.8vw,44px)] text-cinza-texto mb-3.5 text-balance">
