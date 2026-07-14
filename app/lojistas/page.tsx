@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { WppIcon } from "@/components/WppIcon";
 import { RevealSection } from "@/components/RevealSection";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Parceria para Lojistas — Laudo Cautelar com Volume Mensal | Maxilaudo Curitiba",
@@ -161,7 +162,7 @@ export default function LojistasPage() {
       />
 
       {/* 1. HERO */}
-      <section className="relative bg-azul text-white overflow-hidden" style={{ padding: "96px 0 88px" }}>
+      <section className="relative bg-azul-escuro text-white overflow-hidden" style={{ padding: "96px 0 88px" }}>
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -178,6 +179,8 @@ export default function LojistasPage() {
         />
 
         <div className="relative max-w-[1280px] mx-auto px-6">
+          <Breadcrumb current="Parceria para Lojistas" />
+
           <RevealSection className="max-w-[760px]">
             <div className="inline-flex items-center gap-2.5 bg-vermelho text-white px-[14px] py-[7px] rounded-[6px] font-heading font-extrabold tracking-[0.12em] text-[13px] uppercase mb-[22px]">
               Parceria para Lojistas e Revendas

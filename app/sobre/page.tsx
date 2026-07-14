@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { WppIcon } from "@/components/WppIcon";
 import { RevealSection } from "@/components/RevealSection";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Sobre a Maxilaudo — 11 anos em perícias e vistorias veiculares em Curitiba",
@@ -77,7 +78,7 @@ export default function SobrePage() {
       />
 
       {/* 1. HERO INSTITUCIONAL */}
-      <section className="relative bg-azul text-white overflow-hidden" style={{ padding: "96px 0 96px" }}>
+      <section className="relative bg-azul-escuro text-white overflow-hidden" style={{ padding: "96px 0 96px" }}>
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -98,6 +99,8 @@ export default function SobrePage() {
         />
 
         <div className="relative max-w-[1280px] mx-auto px-6">
+          <Breadcrumb current="Sobre a Maxilaudo" />
+
           <RevealSection className="max-w-[760px]">
             <div className="inline-flex items-center gap-2.5 bg-vermelho text-white px-[14px] py-[7px] rounded-[6px] font-heading font-extrabold tracking-[0.12em] text-[13px] uppercase mb-[22px]">
               A Empresa
