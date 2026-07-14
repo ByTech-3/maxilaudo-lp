@@ -445,7 +445,7 @@ export default function SobrePage() {
               { num: "5+", label: "remarcações por dia", accent: true },
               { num: "20+", label: "fotos por atendimento", accent: false },
               { num: "30 min", label: "para emissão do laudo", accent: true },
-              { num: "3", label: "veículos simultâneos", accent: false },
+              { num: "4", label: "veículos simultâneos", accent: false },
             ].map((s) => (
               <RevealSection key={s.label} className="flex flex-col gap-1.5">
                 <div
