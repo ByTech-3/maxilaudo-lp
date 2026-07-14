@@ -301,7 +301,7 @@ export default function SobrePage() {
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
             {[
-              { num: "3", label: "veículos atendidos simultaneamente" },
+              { num: "4", label: "veículos atendidos simultaneamente" },
               { num: "1h–1h30", label: "duração média do laudo cautelar" },
               { num: "≈1h", label: "duração média da remarcação" },
             ].map((m) => (
