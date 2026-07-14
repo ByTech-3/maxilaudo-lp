@@ -26,6 +26,10 @@
       "Olá! Tenho interesse no combo Histórico Veicular + MAXILAUDO Cautelar. Como funciona?",
     "Quero consultar o histórico":
       "Olá! Quero consultar o Histórico Veicular de um veículo. Qual a placa preciso informar.",
+    "Olá! Vim pelo site e quero saber mais sobre a Maxilaudo.":
+      "Olá! Vim pela página da Maxilaudo e quero falar com um especialista.",
+    "Olá! Sou lojista e quero conhecer a parceria da Maxilaudo.":
+      "Olá! Sou lojista e quero conhecer a parceria da Maxilaudo — volume mensal e valores.",
   };
 
   // ─── Resolve a mensagem personalizada pelo texto original ─────────────────
