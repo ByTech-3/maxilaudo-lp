@@ -21,7 +21,7 @@ const partners = [
   { file: "18-logo-asn.jpg", alt: "ASN Multimarcas", light: false },
   { file: "19-logo-btk-clara.jpg", alt: "BTK Multimarcas", light: true },
   { file: "20-logo-casaril.jpg", alt: "Casaril Veículos", light: false },
-  { file: "21-logo-carroagem.jpg", alt: "Carroagem Multimarcas", light: false },
+  { file: "21-logo-carroagem-clara.jpg", alt: "Carroagem Multimarcas", light: true },
   { file: "22-logo-ville-clara.jpg", alt: "Ville Multimarcas", light: true },
   { file: "23-fazendinha motors-clara.jpg", alt: "Fazendinha Motors", light: true },
   { file: "24-logo-pratasul-clara.jpg", alt: "Pratasul Multimarcas", light: true },
