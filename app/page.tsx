@@ -96,7 +96,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2.5 bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.18)] text-white px-4 py-2 rounded-full text-[12px] font-semibold tracking-[0.06em] uppercase mb-6">
                 <span className="w-2 h-2 rounded-full bg-[#34d399] shadow-[0_0_0_4px_rgba(52,211,153,0.2)]" />
-                Credenciada DETRAN-PR para Remarcação de Chassi
+                Credenciada DETRAN-PR para Remarcação de Chassi e Motor
               </div>
 
               <h1 className="h-font text-[clamp(34px,5.4vw,64px)] text-white mb-5 text-balance">
